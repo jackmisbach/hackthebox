@@ -1,3 +1,5 @@
+Hypervisor and Kali VM Setup
+---
 You can choose any hypervisor, some people like [VirtualBox](https://www.virtualbox.org/wiki/Downloads) better, however, for this tutorial we will be using VMWare, as that is what I personally use. 
 
 1. Register a Broadcom account https://profile.broadcom.com/web/registration
@@ -5,22 +7,26 @@ You can choose any hypervisor, some people like [VirtualBox](https://www.virtual
 3. Browse to https://support.broadcom.com/group/ecx/free-downloads
 4. Select VMWare Workstation Pro at the bottom, or browse to https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Workstation%20Pro&freeDownloads=true
 5. Select VMWare Workstation Pro 25H2 for Windows and Release 25H2
-6. Note: Before being able to press the download button, you must open the terms of service, and then check the box as shown in the screenshot below 
-7. It will then have you fill out a Trade Compliance and Download Conditions Form, after that you can finally press the download button for the final time, and you will get the installer.
+6. Note: Before being able to press the download button, you must open the terms of service, and then check the box as shown in the screenshot below
+<img width="1636" height="659" alt="OYsYUCIk74" src="https://github.com/user-attachments/assets/c1537acf-46fc-460a-9296-d9d74729d4bf" />
+
+8. It will then have you fill out a Trade Compliance and Download Conditions Form, after that you can finally press the download button for the final time, and you will get the installer.
+---
 
 8. Download the Kali ISO or, what I use, just the pre-built virtual machine. If you use the pre-built virtual machine you can skip through these next steps and just extract and open your virtual machine in VMWare (you literally just click File > Open > foldername of what you just extracted) https://www.kali.org/get-kali/#kali-virtual-machines
+<img width="1895" height="980" alt="OBZCK7eDMp" src="https://github.com/user-attachments/assets/4fb434ea-2d9b-4f4c-a4bc-f5fe51b60450" />
 
 
-9. Follow the instructions for the hypervisor you downloaded
+10. Follow the instructions for the hypervisor you downloaded
     - VMWare:
         1. Open the app, drag in the Kali ISO, click continue, then choose Linux -> Other Linux 6.x, and start the machine
     - VirtualBox:
-        1. Open VirtualBox, click New, give it a name (something like "Matrix Kali"), select the Kali ISO image from your downloads, and start the machine
-10. Configuring the VM:
+        1. Open VirtualBox, click New, give it a name (something like "Kali"), select the Kali ISO image from your downloads, and start the machine
+11. Configuring the VM:
     - Choose Graphical Install
     - Hostname: "kali"
     - Leave the domain name blank
-    - Fullname, username & password: "kali"
+    - Fullname, username & password: "kali" or obviously setup as you wish
     - Choose central time
     - Choose "use entire desk and set up lvm"
     - Select "all files in one partition"
